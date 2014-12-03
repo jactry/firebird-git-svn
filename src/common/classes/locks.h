@@ -64,7 +64,7 @@ public:
 	}
 
 private:
-	typedef BOOL WINAPI (*tTryEnterCriticalSection)(LPCRITICAL_SECTION lpCriticalSection);
+	typedef BOOL (WINAPI *tTryEnterCriticalSection)(LPCRITICAL_SECTION lpCriticalSection);
 
 	static tTryEnterCriticalSection m_funct;
 };
